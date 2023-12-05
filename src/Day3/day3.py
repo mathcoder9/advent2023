@@ -98,4 +98,4 @@ class Solution:
 solution = Solution()
 solution.solve_one()
 solution.solve_two()
-solution.getSol()
+solution.get_sol()
