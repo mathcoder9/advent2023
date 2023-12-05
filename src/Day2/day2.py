@@ -1,4 +1,6 @@
 from typing import Tuple
+
+
 class Solution:
     def __init__(self) -> None:
         self.sol1 = 0
@@ -7,7 +9,7 @@ class Solution:
             self.data = file.read().split("\n")
 
     # parses a line and returns ID, max_red, max_green, max_blue
-    def parseLine(self, line:str) -> Tuple[int, int, int, int]:
+    def parseLine(self, line: str) -> Tuple[int, int, int, int]:
         id_data, game_data = line.split(":")
         game_id = int(id_data.split(" ")[1])
         max_red, max_green, max_blue = 0, 0, 0
@@ -31,6 +33,7 @@ class Solution:
 
     def getSol(self) -> None:
         print(f"Solutions\na {self.sol1}\nb {self.sol2}")
+
 
 solution = Solution()
 solution.solve()
