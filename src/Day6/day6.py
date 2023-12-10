@@ -8,7 +8,6 @@ class Solution:
         self.sol2 = 0
         with open("day6.txt") as file:
             self.data = file.read()
-        self.parse_data()
 
     # returns list of times and distances
     def parse_data(self) -> Tuple[List[int]]:
